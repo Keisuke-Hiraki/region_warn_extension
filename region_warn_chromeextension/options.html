@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"> <!-- 文字エンコーディングをUTF-8に設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Region Warning - Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    select, input[type="checkbox"] {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #status {
+      color: green;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>AWS Region Warning - Options</h1>
+  <label for="region">Preferred AWS Region:</label>
+  <select id="region">
+    <!-- リージョンの選択肢 -->
+    <option value="アジアパシフィック (東京)">アジアパシフィック (東京)</option>
+    <option value="アジアパシフィック (ソウル)">アジアパシフィック (ソウル)</option>
+    <option value="アジアパシフィック (シンガポール)">アジアパシフィック (シンガポール)</option>
+    <option value="アジアパシフィック (シドニー)">アジアパシフィック (シドニー)</option>
+    <option value="アジアパシフィック (ムンバイ)">アジアパシフィック (ムンバイ)</option>
+    <option value="アジアパシフィック (香港)">アジアパシフィック (香港)</option>
+    <option value="米国 (バージニア北部)">米国 (バージニア北部)</option>
+    <option value="米国東部 (オハイオ)">米国東部 (オハイオ)</option>
+    <option value="米国西部 (北カリフォルニア)">米国西部 (北カリフォルニア)</option>
+    <option value="米国西部 (オレゴン)">米国西部 (オレゴン)</option>
+    <option value="欧州 (アイルランド)">欧州 (アイルランド)</option>
+    <option value="欧州 (ロンドン)">欧州 (ロンドン)</option>
+    <option value="欧州 (フランクフルト)">欧州 (フランクフルト)</option>
+    <option value="欧州 (パリ)">欧州 (パリ)</option>
+    <option value="欧州 (ストックホルム)">欧州 (ストックホルム)</option>
+    <option value="中東 (バーレーン)">中東 (バーレーン)</option>
+    <option value="南米 (サンパウロ)">南米 (サンパウロ)</option>
+    <option value="アフリカ (ケープタウン)">アフリカ (ケープタウン)</option>
+  </select>
+  <br>
+  <label for="enableCheck">Enable Region Check:</label>
+  <input type="checkbox" id="enableCheck">
+  <br>
+  <button id="save">Save</button>
+  <p id="status">Settings saved!</p>
+  <script src="options.js"></script>
+</body>
+</html>
