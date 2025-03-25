@@ -33,8 +33,8 @@ AWS マネジメントコンソールで作業する際に、設定した推奨�
    git clone https://github.com/Keisuke-Hiraki/region_warn_extension.git
    ```
 2. ダウンロードしたリポジトリの `firefox` フォルダ配下のファイルを全て選択しzip化します。
-3. Firefox で `about:debugging#/runtime/this-firefox` を開きます
-4. 「一時的なアドオンを読み込む」をクリックします
+3. Firefox で `about:addons` を開きます
+4. 歯車内で「ファイルからアドオンをインストール」をクリックします
 5. 先ほど圧縮したzipファイルを選択します
 
 ## 使い方
