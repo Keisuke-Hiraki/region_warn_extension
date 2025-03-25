@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AWS Region Warning - Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.5;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    select {
+      margin-top: 5px;
+      padding: 5px;
+      width: 300px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 8px 15px;
+      background-color: #0073bb;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005d99;
+    }
+    #status {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #dff0d8;
+      color: #3c763d;
+      border-radius: 3px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>AWS Region Warning - Options</h2>
+
+  <label>
+    Preferred AWS Region:
+    <select id="region">
+      <option value="アジアパシフィック (東京)">アジアパシフィック (東京)</option>
+      <option value="アジアパシフィック (ソウル)">アジアパシフィック (ソウル)</option>
+      <option value="アジアパシフィック (シンガポール)">アジアパシフィック (シンガポール)</option>
+      <option value="アジアパシフィック (シドニー)">アジアパシフィック (シドニー)</option>
+      <option value="アジアパシフィック (ムンバイ)">アジアパシフィック (ムンバイ)</option>
+      <option value="アジアパシフィック (香港)">アジアパシフィック (香港)</option>
+      <option value="米国 (バージニア北部)">米国 (バージニア北部)</option>
+      <option value="米国東部 (オハイオ)">米国東部 (オハイオ)</option>
+      <option value="米国西部 (北カリフォルニア)">米国西部 (北カリフォルニア)</option>
+      <option value="米国西部 (オレゴン)">米国西部 (オレゴン)</option>
+      <option value="欧州 (アイルランド)">欧州 (アイルランド)</option>
+      <option value="欧州 (ロンドン)">欧州 (ロンドン)</option>
+      <option value="欧州 (フランクフルト)">欧州 (フランクフルト)</option>
+      <option value="欧州 (パリ)">欧州 (パリ)</option>
+      <option value="欧州 (ストックホルム)">欧州 (ストックホルム)</option>
+      <option value="中東 (バーレーン)">中東 (バーレーン)</option>
+      <option value="南米 (サンパウロ)">南米 (サンパウロ)</option>
+      <option value="アフリカ (ケープタウン)">アフリカ (ケープタウン)</option>
+    </select>
+  </label>
+
+  <label>
+    <input type="checkbox" id="enableCheck">
+    Enable Region Check
+  </label>
+
+  <button id="save">Save</button>
+  <div id="status">Settings saved!</div>
+
+  <script src="options.js"></script>
+</body>
+</html>
